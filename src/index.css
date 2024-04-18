@@ -281,7 +281,9 @@ main {
   font-size: 0.85rem;
   margin-left: 0.25rem;
   transition: all 0.3s ease-out;
+  
 }
+
 
 .challenge-item-details.expanded .challenge-item-details-icon {
   transform: rotate(180deg);
@@ -314,6 +316,19 @@ main {
   width: 30rem;
   max-width: 90%;
   z-index: 10;
+  animation: anima 0.3s ease-out;
+}
+
+
+@keyframes anima{
+  0%{
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .modal h2 {
